@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url('https://cdn.vectorstock.com/i/500p/40/50/background-with-paper-blue-flowers-vector-14984050.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#101010;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    width: 350px;
+    padding: 30px 25px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.login-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #101010;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    color:#101010;
+}
+
+.input-box input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #0e0d0d;
+    pointer-events: none;
+}
+
+.remember-forgot-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #050505;
+}
+.remember-me{
+    font-size: 14px;
+}
+.remember-forgot-box label,
+.remember-forgot-box a {
+    cursor: pointer;
+}
+
+.remember-forgot-box a {
+    color: #0939a0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.remember-forgot-box a:hover {
+    text-decoration: underline;
+}
+
+#login-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(135deg, #00d2ff, #3a47d5);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#login-button:hover {
+    background: linear-gradient(135deg, #3a47d5, #00d2ff);
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+.dont-have-an-acc {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0f0f0f;
+    text-align: center;
+}
+
+.dont-have-an-acc a {
+    color: #0939a0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dont-have-an-acc a:hover {
+    text-decoration: underline;
+}
